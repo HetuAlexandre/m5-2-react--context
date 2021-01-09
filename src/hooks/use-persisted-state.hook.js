@@ -7,7 +7,6 @@ const usePersistedState = (key, defaultValue) => {
             else if (storageItem === null)return defaultValue;
     })
     React.useEffect(() =>{
-        // in local storage always pass key first
         localStorage.setItem(key,
         JSON.stringify(value)
         );
